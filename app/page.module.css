@@ -1,0 +1,519 @@
+.page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  min-width: 0;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  box-sizing: border-box;
+  color: #202124;
+  font-family: Arial, sans-serif;
+}
+
+.loginCard {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  width: min(100%, 940px);
+  min-width: 0;
+  min-height: 640px;
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 28px 80px rgb(0 0 0 / 18%);
+}
+
+.brandPanel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 30px 34px;
+  overflow: hidden;
+  color: #fff;
+  background: #292929;
+}
+
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c8c8c8;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.statusIcons {
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.brandCopy {
+  margin-top: 40px;
+}
+
+.logo {
+  margin: 0;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.logo span {
+  color: #a7a7a7;
+}
+
+.tagline {
+  margin: 7px 0 0;
+  color: #b7b7b7;
+  font-size: 14px;
+}
+
+.illustration {
+  position: relative;
+  display: grid;
+  flex: 1;
+  min-height: 220px;
+  place-items: center;
+  margin: 30px -12px 12px;
+}
+
+.orbit {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border: 1px solid #555;
+  border-radius: 50%;
+  background: radial-gradient(circle, #383838 0, #2d2d2d 68%, transparent 69%);
+}
+
+.book {
+  position: absolute;
+  z-index: 1;
+  top: 42px;
+  left: calc(50% - 87px);
+  display: flex;
+  width: 88px;
+  height: 63px;
+  transform: rotate(-12deg);
+  filter: drop-shadow(0 10px 12px rgb(0 0 0 / 20%));
+}
+
+.book span {
+  width: 50%;
+  border: 1px solid #d5d5d5;
+  background: #f3f3f3;
+}
+
+.book span:first-child {
+  border-radius: 8px 2px 2px 8px;
+  background: linear-gradient(90deg, #c9c9c9, #f3f3f3 22%);
+}
+
+.book span:last-child {
+  border-radius: 2px 8px 8px 2px;
+  background: linear-gradient(270deg, #c9c9c9, #fff 22%);
+}
+
+.laptop {
+  position: absolute;
+  z-index: 2;
+  top: 91px;
+  left: calc(50% - 30px);
+  width: 130px;
+  transform: rotate(7deg);
+  filter: drop-shadow(0 12px 14px rgb(0 0 0 / 28%));
+}
+
+.laptopScreen {
+  display: grid;
+  height: 84px;
+  place-items: center;
+  border: 5px solid #bdbdbd;
+  border-bottom-width: 8px;
+  border-radius: 9px 9px 3px 3px;
+  background: #e8e8e8;
+  color: #333;
+}
+
+.laptopScreen span {
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: -4px;
+}
+
+.laptopBase {
+  height: 8px;
+  margin: 0 -9px;
+  border-radius: 0 0 10px 10px;
+  background: linear-gradient(#d2d2d2, #969696);
+}
+
+.sparkle {
+  position: absolute;
+  top: 40px;
+  right: 37px;
+  color: #cfcfcf;
+  font-size: 24px;
+}
+
+.brandNote {
+  margin: 0 0 12px;
+  color: #d0d0d0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.formPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 60px clamp(36px, 6vw, 72px);
+}
+
+.formHeading {
+  margin-bottom: 31px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: #777;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.formHeading h2 {
+  margin: 0;
+  color: #252525;
+  font-size: clamp(25px, 3vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.field + .field {
+  margin-top: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  color: #383838;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  height: 49px;
+  padding: 0 14px;
+  border: 1px solid #dedede;
+  border-radius: 9px;
+  outline: none;
+  background: #fff;
+  color: #252525;
+  font-size: 14px;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.input::placeholder {
+  color: #a0a0a0;
+}
+
+.input:focus {
+  border-color: #555;
+  box-shadow: 0 0 0 3px rgb(40 40 40 / 9%);
+}
+
+.passwordWrapper {
+  position: relative;
+}
+
+.passwordWrapper .input {
+  padding-right: 88px;
+}
+
+.showPassword {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  padding: 4px 0;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: #626262;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.showPassword:hover,
+.forgot:hover {
+  color: #111;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 17px 0 23px;
+  color: #5f5f5f;
+  font-size: 12px;
+}
+
+.remember {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.remember input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: #292929;
+}
+
+.forgot {
+  padding: 4px 0;
+  border: 0;
+  background: transparent;
+  color: #555;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.loginButton {
+  display: flex;
+  width: 100%;
+  height: 49px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #292929;
+  border-radius: 9px;
+  background: #292929;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.loginButton:hover {
+  transform: translateY(-1px);
+  background: #111;
+}
+
+.loginButton span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 22px 0;
+  color: #888;
+  font-size: 12px;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background: #e7e7e7;
+}
+
+.googleButton {
+  display: flex;
+  width: 100%;
+  height: 49px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #dedede;
+  border-radius: 9px;
+  background: #fff;
+  color: #363636;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.googleButton:hover {
+  border-color: #bdbdbd;
+  background: #f8f8f8;
+}
+
+.googleIcon {
+  color: #4a4a4a;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.footer {
+  margin: 30px 0 0;
+  color: #999;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .page {
+    display: flex;
+    align-items: flex-start;
+    padding: 24px;
+    background: #f1f1f1;
+  }
+
+  .loginCard {
+    grid-template-columns: 1fr;
+    width: min(100%, 500px);
+    min-height: 0;
+    margin: 0 auto;
+  }
+
+  .brandPanel {
+    min-height: 280px;
+    padding: 24px 28px;
+  }
+
+  .brandCopy {
+    margin-top: 24px;
+  }
+
+  .illustration {
+    position: absolute;
+    right: 26px;
+    bottom: 10px;
+    width: 165px;
+    height: 150px;
+    min-height: 0;
+    margin: 0;
+    transform: scale(0.75);
+    transform-origin: right bottom;
+  }
+
+  .orbit {
+    width: 180px;
+    height: 180px;
+  }
+
+  .book {
+    top: 26px;
+    left: calc(50% - 80px);
+  }
+
+  .laptop {
+    top: 76px;
+    left: calc(50% - 28px);
+  }
+
+  .sparkle {
+    top: 25px;
+    right: 17px;
+  }
+
+  .brandNote {
+    position: absolute;
+    bottom: 29px;
+    left: 28px;
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .formPanel {
+    padding: 38px 34px 30px;
+  }
+
+  .formHeading {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 420px) {
+  .page {
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 0;
+    background: #fff;
+  }
+
+  .loginCard {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .brandPanel {
+    min-height: 260px;
+    padding: 22px 24px;
+  }
+
+  .brandCopy {
+    margin-top: 20px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+
+  .illustration {
+    right: 19px;
+    bottom: 0;
+    transform: scale(0.66);
+  }
+
+  .brandNote {
+    bottom: 25px;
+    left: 24px;
+    font-size: 12px;
+  }
+
+  .formPanel {
+    justify-content: flex-start;
+    padding: 33px 24px 25px;
+  }
+
+  .formHeading h2 {
+    font-size: 26px;
+  }
+
+  .footer {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  .illustration {
+    right: 7px;
+    transform: scale(0.55);
+  }
+
+  .formPanel {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+}
+
+
